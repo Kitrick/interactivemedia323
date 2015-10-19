@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Kit Rodewald's Homepage</title>
+</head>
+
+<body>
+  <h1>Kit Rodewald's Homepage</h1>
+  <p>
+    Projects
+    <ul>
+    	<li><a href="http://stpetersburg.craigslist.org/for/5256889827.html"> Project 1 </a> </li>
+    </ul>
+  </p>
+  <p>
+    Exercises:
+    <ul>
+    	<li><a href="http://kitrick.github.io/interactivemedia323/Exercise1">Exercise 1</a></li>
+    	<li><a href="http://kitrick.github.io/interactivemedia323/Exercise2">Exercise 2a</a></li>
+      <li><a href="exercise2b">Exercise 2b</a></li>
+    </ul>
+  </p>
+
+  <img src="http://rrodewald12.github.io/interactivemedia323/images/Kit.jpg" height="600" width="600">
+  
+</body>
+
+</html>
