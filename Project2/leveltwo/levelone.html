@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+				<title>Level Two: One</title>
+				<style>
+							#next,
+#prev {
+    color: #333;
+    top: 3000px;
+    display: inline-block;
+    font: normal bold 4em Arial,sans-serif;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: auto;
+}
+
+#next,
+#prev { padding: 0.5em 1.5em }
+
+#next { text-align: right }
+
+#next:before,
+#next:after,
+#prev:before,
+#prev:after {
+    background: #333;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+    content: "";
+    display: block;
+    height: 0.5em;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1em;
+}
+
+#prev:before,
+#prev:after { left: 0 }
+
+#next:before,
+#prev:before {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#next:after,
+#prev:after {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#prev:after,
+#next:before { margin-top: -.36em }
+
+#next:hover,
+#next:focus,
+#prev:hover,
+#prev:focus { color: #c00 }
+
+#next:hover:before,
+#next:hover:after,
+#next:focus:before,
+#next:focus:after,
+#prev:hover:before,
+#prev:hover:after,
+#prev:focus:before,
+#prev:focus:after { background: #c00 }
+
+nav { text-align: center }
+</style>
+		</head>
+			<body>
+				<nav>
+ <a href="../levelone/levelfive.html" id="prev">Prev</a>
+ <a href="leveltwo.html" id="next">Next</a>
+</nav>
+				<h1>Who starts last</h1>
+				<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <em>but shoots first</em>
+				<h2>does not miss</h2>
+				<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <em>standing up</em>
+				<h3>on the draw</h3>
+				<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <em></em>face to face</em>
+				<h4>to kill him</h4>
+				<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <em>who moves first</em>
+				<h5>and thus betrays</h5>
+				<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <em>himself and is</em>
+				<h6>to late</h6>
+				<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <em>in his haste</em>
+
+			</body>
+	</html>

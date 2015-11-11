@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Level Five: Two</title>
+<style> 
+#next,
+#prev {
+    color: #333;
+    top: 3000px;
+    display: inline-block;
+    font: normal bold 4em Arial,sans-serif;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: auto;
+}
+
+#next,
+#prev { padding: 0.5em 1.5em }
+
+#next { text-align: right }
+
+#next:before,
+#next:after,
+#prev:before,
+#prev:after {
+    background: #333;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+    content: "";
+    display: block;
+    height: 0.5em;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1em;
+}
+
+#prev:before,
+#prev:after { left: 0 }
+
+#next:before,
+#prev:before {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#next:after,
+#prev:after {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#prev:after,
+#next:before { margin-top: -.36em }
+
+#next:hover,
+#next:focus,
+#prev:hover,
+#prev:focus { color: #c00 }
+
+#next:hover:before,
+#next:hover:after,
+#next:focus:before,
+#next:focus:after,
+#prev:hover:before,
+#prev:hover:after,
+#prev:focus:before,
+#prev:focus:after { background: #c00 }
+
+nav { text-align: center }
+div {
+    width: 100px;
+    height: 50px;
+    background-color: #840000;
+    font-weight: bold;
+    position: relative;
+    font-family: "Lucida Console", Monaco, monospac;
+    -webkit-animation: mymove 15s infinite;
+    animation: mymove 15s infinite;
+}
+
+
+
+
+#div1 {animation-timing-function: ease-in;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: linear;}
+#div4 {animation-timing-function: ease-in-out;}
+#div5 {animation-timing-function: ease;}
+#div6 {animation-timing-function: ease-out;}
+#div7 {animation-timing-function: linear;}
+#div8 {animation-timing-function: ease;}
+#div9 {animation-timing-function: ease-in;}
+#div10 {animation-timing-function: linear;}
+#div11 {animation-timing-function: ease-in;}
+#div12 {animation-timing-function: ease;}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 1000px;}
+    0% {background-color:blue; left:0px;}
+    25% {background-color:green; left:200px;}
+    50% {background-color:yellow; left:400px;}
+    75% {background-color:orange; left:600px;}
+    100% {background-color:red; left:800px;}
+
+}
+</style>
+</head>
+<body>
+
+<div id="div1">Who starts last</div>
+<div id="div2">but shoots first</div>
+<div id="div3">does not miss</div>
+<div id="div4">standing up</div>
+<div id="div5">on the draw</div>
+<div id="div6">face to face</div>
+<div id="div7">to kill him</div>
+<div id="div8">who moves first</div>
+<div id="div9">and thus betrays</div>
+<div id="div10">himself and is</div>
+<div id="div11">to late</div>
+<div id="div12">in his haste</div>
+                    <nav>
+                    <a href="levelone.html" id="prev">Prev</a>
+                    <a href="levelthree.html" id="next">Next</a>
+                    </nav>
+
+</body>
+</html>

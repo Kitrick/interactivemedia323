@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Level Five: Five</title>
+<style> 
+#next,
+#prev {
+    color: #333;
+    top: 3000px;
+    display: inline-block;
+    font: normal bold 4em Arial,sans-serif;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: auto;
+}
+
+#next,
+#prev { padding: 0.5em 1.5em }
+
+#next { text-align: right }
+
+#next:before,
+#next:after,
+#prev:before,
+#prev:after {
+    background: #333;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+    content: "";
+    display: block;
+    height: 0.5em;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1em;
+}
+
+#prev:before,
+#prev:after { left: 0 }
+
+#next:before,
+#prev:before {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#next:after,
+#prev:after {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#prev:after,
+#next:before { margin-top: -.36em }
+
+#next:hover,
+#next:focus,
+#prev:hover,
+#prev:focus { color: #c00 }
+
+#next:hover:before,
+#next:hover:after,
+#next:focus:before,
+#next:focus:after,
+#prev:hover:before,
+#prev:hover:after,
+#prev:focus:before,
+#prev:focus:after { background: #c00 }
+
+nav { text-align: center }
+    body {
+        background-color: #C1A381;
+    }
+    #div1 {
+        animation: bounceIn 2s;
+        font-family: "Lucida Console", Monaco, monospac;
+        color: blue;
+        border: 6px solid blue;
+    }
+    @keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+    }
+    #div2 {
+        animation: bounceIn 3s;
+        font-family: "Lucida Console", Monaco, monospac;
+        color: blue;
+        border: 6px solid blue;
+    }
+    @keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+    }
+    #div3 {
+        animation: bounceIn 3s;
+        font-family: "Lucida Console", Monaco, monospac;
+        color: blue;
+        border: 6px solid blue;
+    }
+    @keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+    }
+    #div4 {
+        animation: bounceIn 4s;
+        font-family: "Lucida Console", Monaco, monospac;
+        color: green;
+        border: 5px solid green;
+    }
+    @keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+    }
+    #div5 {
+        animation: bounceIn 4s;
+        font-family: "Lucida Console", Monaco, monospac;
+        color: green;
+        border: 5px groove green;
+    }
+    @keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+    }
+    #div6 {
+        animation: bounceIn 5s;
+        font-family: "Lucida Console", Monaco, monospac;
+        color: #F4F2A8;
+        border: 4px groove #F4F2A8;
+    }
+    @keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+    }
+    #div7 {
+        animation: bounceIn 5s;
+        font-family: "Lucida Console", Monaco, monospac;
+        color: #F4F2A8;
+        border: 4px double #F4F2A8;
+    }
+    @keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+    }
+    #div8 {
+        animation: bounceIn 5s;
+        font-family: "Lucida Console", Monaco, monospac;
+        color: orange;
+        border: 3px double orange;
+    }
+    @keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+    }
+    #div9 {
+        animation: bounceIn 6s;
+        font-family: "Lucida Console", Monaco, monospac;
+        color: orange;
+        border: 3px dashed orange;
+    }
+    @keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+    }
+    #div10 {
+        animation: bounceIn 6s;
+        font-family: "Lucida Console", Monaco, monospac;
+        color: red;
+        border: 2px dashed red;
+    }
+    @keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+    }
+    #div11 {
+        animation: bounceIn 6s;
+        font-family: "Lucida Console", Monaco, monospac;
+        color: red;
+        border: 1px dotted red;
+    }
+    @keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+    }
+    #div12 {
+        animation: bounceIn 6s;
+        font-family: "Lucida Console", Monaco, monospac;
+        color: red;
+        border: 0px solid red;
+    }
+    @keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+    }
+
+</style>
+</head>
+<body>
+
+<div id="div1">Who starts first</div>
+<br>
+<br>
+<div id="div2">but shoots first</div>
+<br>
+<br>
+<div id="div3">does not miss</div>
+<br>
+<br>
+<div id="div4">standing up</div>
+<br>
+<br>
+<div id="div5">on the draw</div>
+<br>
+<br>
+<div id="div6">face to face</div>
+<br>
+<br>
+<div id="div7">to kill him</div>
+<br>
+<br>
+<div id="div8">who moves first</div>
+<br>
+<br>
+<div id="div9">and thus betrays</div>
+<br>
+<br>
+<div id="div10">himself and is</div>
+<br>
+<br>
+<div id="div11">to late</div>
+<br>
+<br>
+<div id="div12">in his haste</div>
+<nav>
+                    <a href="levelfour.html" id="prev">Prev</a>
+                <a href="../index.html" id="next">Home</a>
+                </nav>
+
+</body>
+</html>

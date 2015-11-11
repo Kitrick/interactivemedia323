@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Level Five: One</title>
+			<style>
+			#next,
+#prev {
+    color: #333;
+    top: 3000px;
+    display: inline-block;
+    font: normal bold 4em Arial,sans-serif;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: auto;
+}
+
+#next,
+#prev { padding: 0.5em 1.5em }
+
+#next { text-align: right }
+
+#next:before,
+#next:after,
+#prev:before,
+#prev:after {
+    background: #333;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+    content: "";
+    display: block;
+    height: 0.5em;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1em;
+}
+
+#prev:before,
+#prev:after { left: 0 }
+
+#next:before,
+#prev:before {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#next:after,
+#prev:after {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#prev:after,
+#next:before { margin-top: -.36em }
+
+#next:hover,
+#next:focus,
+#prev:hover,
+#prev:focus { color: #c00 }
+
+#next:hover:before,
+#next:hover:after,
+#next:focus:before,
+#next:focus:after,
+#prev:hover:before,
+#prev:hover:after,
+#prev:focus:before,
+#prev:focus:after { background: #c00 }
+
+nav { text-align: center }
+				body {
+				background-color: #C1A381;
+				}
+				.base1 {
+				width: 400px;
+				height: 100px;
+				left: 200px;
+				background: grey;
+					-moz-border-radius: 100px / 50px;
+					-webkit-border-radius: 100px / 50px;
+				border-radius: 100px / 50px;
+				position: absolute;
+				z-index: 1; 
+				}
+				.base2 {
+
+				width: 500px;
+				height: 150px;
+				top: 600px;
+				left: 800px;
+				background: grey;
+					-moz-border-radius: 100px / 50px;
+					-webkit-border-radius: 100px / 50px;
+				border-radius: 100px / 50px;
+				position: absolute;
+				}
+				h4 {
+					font-family: "Lucida Console", Monaco, monospace;
+					font-size: 10px;
+					position: absolute;
+					left: 450px;
+					top: 10px;
+					-webkit-animation: mymove 5s infinite;
+    				animation: mymove 5s infinite;
+					}
+					@-webkit-keyframes mymove {
+    				from {left: 300px;}
+    				to {left: 600px;}
+					}
+				h1 {
+					font-family: "Lucida Console", Monaco, monospace;
+					font-size: 20px;
+					position: absolute;
+					left: 205px;
+					top: 40px;
+					-webkit-animation: mymove 4s infinite;
+    				animation: mymove 4s infinite;
+					@keyframes mymove {
+    				from {left: 205px;}
+    				to {left: 300px;}
+					}
+				}
+
+				h5 {
+					font-family: "Lucida Console", Monaco, monospace;
+					position: absolute;
+					font-size: 30px;
+					left: 295px;
+					top: 30px;
+					-webkit-animation: mymove 3s infinite;
+    				animation: mymove 3s infinite;
+					@-webkit-keyframes mymove {
+    				from {left: 200px;}
+    				to {left: 400px;}
+					}
+				}
+				h3 {
+					font-family: "Lucida Console", Monaco, monospac;
+					position: absolute;
+					top: 680px;
+					left: 800px;
+					font-size: 30px;
+				}
+				h2 {
+					font-family: "Lucida Console", Monaco, monospac;
+					position: absolute;
+					top: 680px;
+					left: 1100px;
+					font-size: 30px;
+				}
+				p1 {
+					left: 200px;
+					position: absolute;
+					letter-spacing: 12px;
+					font-family: "Comic Sans MS", cursive, sans-serif;
+					line-height: 40px;
+				}
+				
+				
+			</style>
+		</head>
+			<body>
+				<div class="background"></div>
+				<div class="base1"></div>
+				<div class="base2"></div>
+				<br>
+				<h4>Who starts last</h4>
+				<h1>but shoots first</h1>
+				<h5>does not miss</h5>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<p1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp standing up &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp on the draw &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<br>
+				<br>
+				face to face &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp to kill him &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp who moves first &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<br>
+				<br>
+				and thus betrays &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<br>
+				<br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp himself and is &nbsp </p1>
+				<h3>to late</h3>
+				<h2>in his haste</h2>
+				<nav>
+					<a href="../levelfour/levelfive.html" id="prev">Prev</a>
+ 				<a href="leveltwo.html" id="next">Next</a>
+				</nav>
+
+
+
+
+
+			</body>
+	</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+				<title>Level Four: Two</title>
+					<style>
+					#next,
+#prev {
+    color: #333;
+    top: 3000px;
+    display: inline-block;
+    font: normal bold 4em Arial,sans-serif;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: auto;
+}
+
+#next,
+#prev { padding: 0.5em 1.5em }
+
+#next { text-align: right }
+
+#next:before,
+#next:after,
+#prev:before,
+#prev:after {
+    background: #333;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+    content: "";
+    display: block;
+    height: 0.5em;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1em;
+}
+
+#prev:before,
+#prev:after { left: 0 }
+
+#next:before,
+#prev:before {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#next:after,
+#prev:after {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#prev:after,
+#next:before { margin-top: -.36em }
+
+#next:hover,
+#next:focus,
+#prev:hover,
+#prev:focus { color: #c00 }
+
+#next:hover:before,
+#next:hover:after,
+#next:focus:before,
+#next:focus:after,
+#prev:hover:before,
+#prev:hover:after,
+#prev:focus:before,
+#prev:focus:after { background: #c00 }
+
+nav { text-align: center }
+					
+					.box2 {
+						display: block;
+						width: 1000px;
+						height: 100px;
+						position: absolute;
+						border: 5px double black;
+					}
+					.box3 {
+						display: block right;
+						width: 1000px;
+						height: 100px;
+						top: 500px;
+						left: 500px;
+						position: absolute;
+						border: 5px double black;
+					}
+					.box4 {
+						display: block;
+						width: 1000px;
+						height: 100px;
+						position: absolute;
+						border: 5px double black;
+					}
+					.box5 {
+						display: block right;
+						width: 1000px;
+						height: 100px;
+						top: 1050px;
+						left: 500px;
+						position: absolute;
+						border: 5px double black;
+					}
+					.box6 {
+						display: block;
+						width: 1000px;
+						height: 100px;
+						position: absolute;
+						border: 5px double black;
+						top: 1330px;
+					}
+					.box7 {
+						display: block right;
+						width: 1000px;
+						height: 100px;
+						top: 1580px;
+						left: 500px;
+						position: absolute;
+						border: 5px double black;
+					}
+					.box8 {
+						display: block;
+						width: 1000px;
+						height: 100px;
+						position: absolute;
+						border: 5px double black;
+						top: 1850px;
+					}
+					.box9 {
+						display: block right;
+						width: 1000px;
+						height: 100px;
+						top: 2130px;
+						left: 500px;
+						position: absolute;
+						border: 5px double black;
+					}
+					.box10 {
+						display: block;
+						width: 1000px;
+						height: 100px;
+						position: absolute;
+						border: 5px double black;
+						top: 2400px;
+					}
+					.box11 {
+						display: block right;
+						width: 1000px;
+						height: 100px;
+						top: 2650px;
+						left: 500px;
+						position: absolute;
+						border: 5px double black;
+					}
+					p1 { 
+						position: absolute;
+						left: 375px;
+						font: 80px bold;
+						font-family: "Lucida Console", Monaco, monospace;
+						text-transform: uppercase;
+					}
+					p2 {  
+						position: absolute;
+						left: 1100px;
+						font-size: 35px;
+						top: 220px;
+						font-family: "Lucida Console", Monaco, monospace;
+						text-transform: uppercase;
+					}
+					p3 {
+						position: absolute;
+						left: 180px;
+						font-size: 35px;
+						top: 530px;
+						font-family: "Lucida Console", Monaco, monospace;
+						text-transform: uppercase;
+					}
+					p4 { 
+						position: absolute;
+						left: 1100px;
+						font-size: 35px;
+						top: 820px;
+						font-family: "Lucida Console", Monaco, monospace;
+						text-transform: uppercase;
+						
+					}
+					p5 {
+						position: absolute;
+						left: 180px;
+						font-size: 35px;
+						top: 1080px;
+						font-family: "Lucida Console", Monaco, monospace;
+						text-transform: uppercase;
+					}
+					p6 {
+						position: absolute;
+						left: 1100px;
+						font-size: 35px;
+						top: 1360px;
+						font-family: "Lucida Console", Monaco, monospace;
+						text-transform: uppercase;
+					}
+					p7 {
+						position: absolute;
+						left: 180px;
+						font-size: 35px;
+						top: 1620px;
+						font-family: "Lucida Console", Monaco, monospace;
+						text-transform: uppercase;
+					}
+					p8 {
+						position: absolute;
+						left: 1100px;
+						font-size: 35px;
+						top: 1880px;
+						font-family: "Lucida Console", Monaco, monospace;
+						text-transform: uppercase;
+					}
+					p9 {
+						position: absolute;
+						left: 160px;
+						font-size: 35px;
+						top: 2160px;
+						font-family: "Lucida Console", Monaco, monospace;
+						text-transform: uppercase;
+					}
+					p10 {
+						position: absolute;
+						left: 1100px;
+						font-size: 35px;
+						top: 2430px;
+						font-family: "Lucida Console", Monaco, monospace;
+						text-transform: uppercase;
+					}
+					p11 {
+						position: absolute;
+						left: 180px;
+						font-size: 35px;
+						top: 2700px;
+						font-family: "Lucida Console", Monaco, monospace;
+						text-transform: uppercase;
+					}
+					p12 {
+						position: absolute;
+						left: 600px;
+						font: 80px bold;
+						top: 2780px;
+						font-family: "Lucida Console", Monaco, monospace;
+						text-transform: uppercase;
+					}
+
+					</style>
+		</head>
+			<body>
+					<br>
+					<br>
+					<p1>Who starts last</p1>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="box2"></div>
+					<p2>but shoots first</p2>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="box3"></div>
+					<p3>does not miss</p3>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="box4"></div>
+					<p4>standing up</p4>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="box5"></div>
+					<p5>on the draw</p5>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="box6"></div>
+					<p6>face to face</p6>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="box7"></div>
+					<p7>to kill him</p7>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="box8"></div>
+					<p8>who moves first</p8>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="box9"></div>
+					<p9>and thus betrays</p9>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="box10"></div>
+					<p10>himself and is</p10>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="box11"></div>
+					<p11>to late</p11>
+					<br>
+					<br>
+					<br>
+					<br>
+					<p12>in his haste</p12>
+					<nav>
+					<a href="levelone.html" id="prev">Prev</a>
+ 				<a href="levelthree.html" id="next">Next</a>
+				</nav>
+
+
+			</body>
+	</html>

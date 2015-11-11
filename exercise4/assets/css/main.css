@@ -1,0 +1,656 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: black;
+}
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: white;
+	position: relative;
+}
+.keyboard-container {
+	width: 1000px;
+	height: 300px;
+	bottom: 0px;
+	left: 0px;
+	position: absolute;
+}
+.keyboard {
+	width: 800px;
+	height: 200px;
+	-webkit-transform: skew(2deg);
+	-moz-transform: skew(2deg);
+	-o-transform: skew(2deg);
+	background: black;
+	border-radius: -5px;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 320px;
+}
+.keyboardbottom {
+	position: absolute;
+	width: 800px;
+	height: 10px;
+	-webkit-transform: skew(2deg);
+	-moz-transform: skew(2deg);
+	-o-transform: skew(2deg);
+	background: #272727;
+	left: 24px;
+	top: 520px
+}
+.commandone {
+	position: absolute;
+	width: 30px;
+	height: 20px;
+	background: white;
+	bottom: 45px;
+	left: 90px;
+}
+.commandtwo {
+	position: absolute;
+	width: 30px;
+	height: 20px;
+	background: white;
+	bottom: 45px;
+	left: 440px;
+}
+.spacebar {
+	position: absolute;
+	width: 300px;
+	height: 20px;
+	background: white;
+	left: 130px;
+	bottom: 45px;
+}
+.caps {
+	position: absolute;
+	width: 38px;
+	height: 15px;
+	background: white;
+	bottom: 100px;
+	left: 30px;
+}
+.return {
+	position: absolute;
+	width: 38px;
+	height: 15px;
+	background: white;
+	bottom: 100px;
+	left: 493px;
+
+}
+.shiftone {
+	position: absolute;
+	width: 48px;
+	height: 15px;
+	background: white;
+	bottom: 75px;
+	left: 30px;
+}
+.shifttwo {
+	position: absolute;
+	width: 50px;
+	height: 15px;
+	background: white;
+	bottom: 75px;
+	left: 480px;
+}
+.arrowkeyone {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: white;
+	bottom: 45px;
+	left: 600px;
+}
+.arrowkeytwo {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: white;
+	bottom: 45px;
+	left: 575px;
+}
+.arrowkeythree {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: white;
+	bottom: 45px;
+	left: 550px;
+}
+.arrowkeyfour {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: white;
+	bottom: 70px;
+	left: 575px;
+}
+.optionone {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: white;
+	bottom: 45px;
+	left: 65px;
+}
+.optiontwo {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: white;
+	bottom: 45px;
+	left: 475px;
+}
+.controlone {
+	position: absolute;
+	width: 30px;
+	height: 20px;
+	background: white;
+	bottom: 45px;
+	left: 30px;
+}
+.controltwo {
+	position: absolute;
+	width: 30px;
+	height: 20px;
+	background: white;
+	bottom: 45px;
+	left: 500px;
+}
+.tab {
+	position: absolute;
+	width: 30px;
+	height: 15px;
+	background: white;
+	bottom: 125px;
+	left: 30px;
+}
+.delete {
+	position: absolute;
+	width: 30px;
+	height: 15px;
+	background: white;
+	bottom: 148px;
+	left: 501px;
+}
+.numberzero {
+	position: absolute;
+	width: 45px;
+	height: 20px;
+	background: white;
+	bottom: 45px;
+	left: 650px;
+}
+.numberperiod {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: white;
+	bottom: 45px;
+	left: 700px;
+}
+.numberenter {
+	position: absolute;
+	width: 20px;
+	height: 45px;
+	background: white;
+	bottom: 45px;
+	left: 725px;
+}
+.numberplus {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: white;
+	bottom: 95px;
+	left: 725px;
+}
+.numberminus {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: white;
+	bottom: 120px;
+	left: 725px;
+}
+.numberone {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: white;
+	bottom: 70px;
+	left: 650px;
+}
+.numbertwo {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: white;
+	bottom: 70px;
+	left: 675px;
+}
+.numberthree {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: white;
+	bottom: 70px;
+	left: 700px;
+}
+.numberfour {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: white;
+	bottom: 95px;
+	left: 650px;
+}
+.numberfive {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: white;
+	bottom: 95px;
+	left: 675px;
+}
+.numbersix {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: white;
+	bottom: 95px;
+	left: 700px;
+}
+.numberseven {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: white;
+	bottom: 120px;
+	left: 650px;
+}
+.numbereight {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: white;
+	bottom: 120px;
+	left: 675px;
+}
+.numbernine {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: white;
+	bottom: 120px;
+	left: 700px;
+}
+.backslash {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: white;
+	bottom: 122px;
+	left: 510px;
+}
+.keyone {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 74px;
+	left: 90px;
+}
+.keytwo {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 74px;
+	left: 110px;
+}
+.keythree {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 74px;
+	left: 130px;
+}
+.keyfour {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 74px;
+	left: 150px;
+}
+.keyfive {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 74px;
+	left: 170px;
+}
+.keysix {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 74px;
+	left: 190px;
+}
+.keyseven {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 74px;
+	left: 210px;
+}
+.keyeight {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 74px;
+	left: 230px;
+}
+.keynine {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 74px;
+	left: 250px;
+}
+.keyten {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 74px;
+	left: 270px;
+}
+.keyeleven {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 74px;
+	left: 290px;
+}
+.keytwelve {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 74px;
+	left: 310px;
+}
+.keythirteen {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 74px;
+	left: 330px;
+}
+.keyfourteen {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 74px;
+	left: 350px;
+}
+.keyfifteen {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 74px;
+	left: 370px;
+}
+.keysixteen {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 74px;
+	left: 390px;
+}
+.keyseventeen {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 74px;
+	left: 410px;
+}
+.keyeightteen {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 74px;
+	left: 430px;
+}
+.keynineteen {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 74px;
+	left: 450px;
+}
+.keytwenty {
+	position: absolute;
+	width: 150px;
+	height: 15px;
+	background: white;
+	bottom: 100px;
+	left: 80px;
+}
+.keytwentyone {
+	position: absolute;
+	width: 150px;
+	height: 15px;
+	background: white;
+	bottom: 100px;
+	left: 250px;
+}
+.keytwentytwo {
+	position: absolute;
+	width: 65px;
+	height: 15px;
+	background: white;
+	bottom: 100px;
+	left: 420px;
+}
+.keytwentythree {
+	position: absolute;
+	width: 65px;
+	height: 15px;
+	background: white;
+	bottom: 125px;
+	left: 70px;
+}
+.keytwentyfour {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 125px;
+	left: 145px;
+}
+.keytwentyfive {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 125px;
+	left: 165px;
+}
+.keytwentysix {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 125px;
+	left: 185px;
+}
+.keytwentyseven {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	bottom: 125px;
+	left: 205px;
+}
+.keytwentyeight {
+	position: absolute;
+	width: 90px;
+	height: 15px;
+	background: white;
+	bottom: 125px;
+	left: 230px;
+}
+.keytwentynine {
+	position: absolute;
+	width: 170px;
+	height: 15px;
+	background: white;
+	bottom: 125px;
+	left: 330px;
+}
+.keythirty {
+	position: absolute;
+	width: 250px;
+	height: 15px;
+	background: white;
+	bottom: 148px;
+	left: 30px;
+}
+.keythirtyone {
+	position: absolute;
+	width: 100px;
+	height: 15px;
+	background: white;
+	bottom: 148px;
+	left: 290px;
+}
+.keythirtytwo {
+	position: absolute;
+	width: 80px;
+	height: 15px;
+	background: white;
+	bottom: 148px;
+	left: 400px;
+}
+.canvas2 {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: white;
+	position: relative;
+}
+.phone-container {
+	width: 500px;
+	height: 500px;
+	bottom: 0px;
+	left: 200px;
+	position: absolute;
+}
+.phone {
+	width: 250px;
+	height: 390px;
+	left: 335px;
+	bottom: 30px;
+	border-radius: 25px;
+	position: absolute;
+	background: black;
+}
+.screen {
+	width: 220px;
+	height: 300px;
+	left: 350px;
+	bottom: 75px;
+	position: absolute;
+	background: #313134;
+}
+.bottombutton {
+	width: 50px;
+	height: 10px;
+	left: 435px;
+	bottom: 50px;
+	border-radius: 25px;
+	position: absolute;
+	background: #313134;
+}
+.toppannel {
+	width: 50px;
+	height: 5px;
+	left: 435px;
+	bottom: 405px;
+	border-radius: 25px;
+	position: absolute;
+	background: grey;
+}
+.toppannel {
+	width: 50px;
+	height: 5px;
+	left: 435px;
+	bottom: 405px;
+	border-radius: 25px;
+	position: absolute;
+	background: grey;
+}
+.toppannel {
+	width: 45px;
+	height: 5px;
+	left: 435px;
+	bottom: 405px;
+	border-radius: 25px;
+	position: absolute;
+	background: grey;
+}
+.flashinglight {
+	width: 10px;
+	height: 10px;
+	background: green;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	left: 370px;
+	bottom: 385px;
+	position: absolute;
+}
+.camera {
+	width: 15px;
+	height: 15px;
+	background: #949495;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	left: 530px;
+	bottom: 385px;
+	position: absolute;
+}
+.label {
+	width: 20px;
+	height: 5px;
+	left: 445px;
+	bottom: 390px;
+	border-radius: 25px;
+	position: absolute;
+	background: silver;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Level Five: Four</title>
+<style>
+#next,
+#prev {
+    color: #333;
+    top: 3000px;
+    display: inline-block;
+    font: normal bold 4em Arial,sans-serif;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: auto;
+}
+
+#next,
+#prev { padding: 0.5em 1.5em }
+
+#next { text-align: right }
+
+#next:before,
+#next:after,
+#prev:before,
+#prev:after {
+    background: #333;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+    content: "";
+    display: block;
+    height: 0.5em;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1em;
+}
+
+#prev:before,
+#prev:after { left: 0 }
+
+#next:before,
+#prev:before {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#next:after,
+#prev:after {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#prev:after,
+#next:before { margin-top: -.36em }
+
+#next:hover,
+#next:focus,
+#prev:hover,
+#prev:focus { color: #c00 }
+
+#next:hover:before,
+#next:hover:after,
+#next:focus:before,
+#next:focus:after,
+#prev:hover:before,
+#prev:hover:after,
+#prev:focus:before,
+#prev:focus:after { background: #c00 }
+
+nav { text-align: center }
+    p1 {
+        left: 500px;
+        font-size: 100px;
+        position: absolute;
+    }
+    p2 {
+        left: 700px;
+        top: 200px;
+        position: absolute;
+        font-size: 100px;
+        font-family: "Lucida Console", Monaco, monospac;
+        text-transform: uppercase;
+    }
+    p3 {
+        left: 300px;
+        top: 550px;
+        position: absolute;
+        font-size: 100px;
+    }
+    p4 {
+        left: 500px;
+        top: 900px;
+        position: absolute;
+        font-size: 100px;
+        font-family: "Lucida Console", Monaco, monospac;
+        text-transform: uppercase;
+    }
+    p5 {
+        left: 200px;
+        position: absolute;
+        top: 1000px;
+        font-size: 100px;
+    }
+    p6 {
+        left: 500px;
+        top: 1200px;
+        position: absolute;
+        font-size: 100px;
+    }
+    p7 {
+        left: 870px;
+        top: 1350px;
+        position: absolute;
+        font-size: 100px;
+        font-family: "Lucida Console", Monaco, monospac;
+        text-transform: uppercase;
+    }
+    p8 {
+        left: 150px;
+        top: 1700px;
+        position: absolute;
+        font-size: 100px;
+    }
+    p9 {
+        left: 500px;
+        top: 2000px;
+        position: absolute;
+        font-size: 100px;
+
+    }
+    p10 {
+        left: 130px;
+        top: 2300px;
+        position: absolute;
+        font-size: 100px;
+        font-family: "Lucida Console", Monaco, monospac;
+        text-transform: uppercase;
+    }
+    p11 {
+        left: 700px;
+        top: 2500px;
+        position: absolute;
+        font-size: 100px;
+    }
+    p12 {
+        left: 1500px;
+        top: 2300px;
+        position: absolute;
+        font-size: 100px;
+        font-family: "Lucida Console", Monaco, monospac;
+        text-transform: uppercase;
+    }
+    div {
+        background-color: #d80b0b;
+        padding: 20px;
+        display: none;
+        top: 1000px;
+        height: 6000px;
+    }
+    
+    span:hover + div {
+        display: block;
+    }
+
+
+    
+
+
+</style>
+</head>
+<body>
+        <span><p1>Who starts last</p1></span>
+        <div class="hover"><p2>but shoots first</p2></div>
+        <span><p3>does not miss</p3></span>
+        <div class="hover"><p4>standing up</p4></div>
+        <span><p5>on the draw</p5></span>
+        <span><p6>face to face</p6></span>
+        <div class="hover"><p7>to kill him</p7></div>
+        <span><p8>who moves first</p8></span>
+        <span><p9>and thus betrays</p9></span>
+        <div class="hover"><p10>himself and is</p10></div>
+        <span><p11>to late</p11></span>
+        <div class="hover"><p12>in his haste</p12></div>
+        <nav>
+                    <a href="levelthree.html" id="prev">Prev</a>
+                <a href="levelfive.html" id="next">Next</a>
+                </nav>
+
+
+</body>
+</html>
