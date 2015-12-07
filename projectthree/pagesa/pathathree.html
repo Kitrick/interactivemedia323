@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<title>My Memory: Three</title>
+			<style> 
+				html{
+					background-color: #575290;
+				}
+				.canvas {
+					width: 800px;
+					height: 450px;
+					top: 80px;
+					margin: 100px auto;
+					background: grey;
+					position: relative;
+					}
+				.gameboy-container {
+					width: 1000px;
+					height: 900px;
+					bottom: 0px;
+					left: 0px;
+					position: absolute;
+				}
+				.blackarea {
+					width: 950px;
+					height: 580px;
+					bottom: -90px;
+					left: -76px;
+					background-color: black;
+					border-radius: 25px;
+					position: absolute;
+					z-index: -1;
+				}
+				.arrowkey1 {
+					width: 40px;
+					height: 120px;
+					top: 145px;
+					left: -280px;
+					background-color: grey;
+					position: absolute;
+				}
+				.arrowkey2 {
+					width: 120px;
+					height: 40px;
+					top: 180px;
+					left: -320px;
+					background-color: grey;
+					position: absolute;
+				}
+				.arrowkey1shadow {
+					width: 43px;
+					height: 123px;
+					top: 143px;
+					left: -278px;
+					background-color: black;
+					position: absolute;
+					z-index: -1;
+				}
+				.arrowkey2shadow {
+					width: 123px;
+					height: 43px;
+					top: 177px;
+					left: -318px;
+					background-color: black;
+					position: absolute;
+					z-index: -1;
+				}
+				#circleA {
+					width: 60px;
+					height: 60px;
+					left: 1100px;
+					top: 160px;
+					background: grey;
+					-moz-border-radius: 50px;
+					-webkit-border-radius: 50px;
+					border-radius: 50px;
+					position: absolute;
+				}
+				#circleAshadow{
+					width: 60px;
+					height: 60px;
+					left: 1105px;
+					top: 162px;
+					background: black;
+					-moz-border-radius: 50px;
+					-webkit-border-radius: 50px;
+					border-radius: 50px;
+					position: absolute;
+					z-index: -1;
+				}
+				#circleB {
+					width: 60px;
+					height: 60px;
+					left: 1015px;
+					top: 210px;
+					background: grey;
+					-moz-border-radius: 50px;
+					-webkit-border-radius: 50px;
+					border-radius: 50px;
+					position: absolute;
+				}
+				#circleBshadow{
+					width: 60px;
+					height: 60px;
+					left: 1020px;
+					top: 212px;
+					background: black;
+					-moz-border-radius: 50px;
+					-webkit-border-radius: 50px;
+					border-radius: 50px;
+					position: absolute;
+					z-index: -1;
+				}
+				#ovalstart {
+					width: 200px;
+					height: 50px;
+					top: 480px;
+					left: -400px;
+					background: grey;
+					-moz-border-radius: 100px / 50px;
+					-webkit-border-radius: 100px / 50px;
+					border-radius: 100px / 50px;
+					position: absolute;
+				}
+				#ovalstartshadow{
+					width: 200px;
+					height: 50px;
+					top: 485px;
+					left: -393px;
+					background: black;
+					-moz-border-radius: 100px / 50px;
+					-webkit-border-radius: 100px / 50px;
+					border-radius: 100px / 50px;
+					position: absolute;
+					z-index: -1;
+				}
+				#ovalmenu {
+					width: 200px;
+					height: 50px;
+					top: 550px;
+					left: -400px;
+					background: grey;
+					-moz-border-radius: 100px / 50px;
+					-webkit-border-radius: 100px / 50px;
+					border-radius: 100px / 50px;
+					position: absolute;
+				}
+				#ovalmenushadow{
+					width: 200px;
+					height: 50px;
+					top: 555px;
+					left: -393px;
+					background: black;
+					-moz-border-radius: 100px / 50px;
+					-webkit-border-radius: 100px / 50px;
+					border-radius: 100px / 50px;
+					position: absolute;
+					z-index: -1;
+				}
+				h1 {
+					color: white;
+					left: 230px;
+					top: 450px;
+					position: absolute;
+				}
+				p1 {
+					font-size: 40px;
+					position: absolute;
+				}
+				p2 {
+					font-size: 30px;
+					padding-bottom: -20px;
+					padding-left: 15px;
+					padding-top: 10px;
+					position: absolute;
+				}
+				p3 {
+					font-size: 30px;
+					padding-left: 20px;
+					padding-top: 20px;
+					position: absolute;
+					text-align: center;
+				}
+				p4 {
+					font-size: 20px;
+					padding-left: 0px;
+					padding-top: 20px;
+					top: 300px;
+					position: absolute;
+					text-align: center;
+				}
+				a:visited {
+					text-decoration: none;
+					color: black;
+				}
+				#ovalvent1 {
+					width: 200px;
+					height: 15px;
+					top: 500px;
+					left: 1000px;
+					background: black;
+					-webkit-transform: skew(5deg);
+					-moz-transform: skew(5deg);
+					-o-transform: skew(5deg);
+					-moz-border-radius: 100px / 50px;
+					-webkit-border-radius: 100px / 50px;
+					border-radius: 100px / 50px;
+					position: absolute;
+				}
+				#ovalvent2 {
+					width: 200px;
+					height: 15px;
+					top: 530px;
+					left: 1000px;
+					background: black;
+					-webkit-transform: skew(5deg);
+					-moz-transform: skew(5deg);
+					-o-transform: skew(5deg);
+					-moz-border-radius: 100px / 50px;
+					-webkit-border-radius: 100px / 50px;
+					border-radius: 100px / 50px;
+					position: absolute;
+				}
+				#ovalvent3 {
+					width: 200px;
+					height: 15px;
+					top: 560px;
+					left: 1000px;
+					background: black;
+					-webkit-transform: skew(5deg);
+					-moz-transform: skew(5deg);
+					-o-transform: skew(5deg);
+					-moz-border-radius: 100px / 50px;
+					-webkit-border-radius: 100px / 50px;
+					border-radius: 100px / 50px;
+					position: absolute;
+				}
+
+			</style>
+		</head>
+
+		<body>
+			<div class="canvas"> 
+					<p3>Playing the <i>GAMEBOY</i> has been fun, but now that you have arived, you probably should ask your parents about the family issue.....right after you get past this level that you're stuck on.&nbsp&nbsp&nbsp&nbsp&nbsp</p3> <p4>A). Continue playing on the <i>GAMEBOY</i>, then ask once you sit down.
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Or
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp B). Shut it down for now, and ask.. if you're that interested.</p4>
+				<div class="object gameboy-container"></div>
+							<div class="object blackarea"></div>
+								<h1><b>GAMEBOY</b>&nbsp&nbsp<i>ADVANCED</i></h1>
+							<div class="arrowkey1"></div>
+							<div class="arrowkey2"></div>
+								<div class="arrowkey1shadow"></div>
+								<div class="arrowkey2shadow"></div>
+							<a href="../pagesa/pathafour.html"><div id="circleA">
+									<p1>&nbsp&nbspA</p1></div></a>
+									<div id="circleAshadow"></div>
+							<a href="../pagesb/pathbthree.html"><div id="circleB">
+									<p1>&nbsp&nbspB</p1></div></a>
+									<div id="circleBshadow"></div>
+							<div id="ovalstart">
+								<p2>&nbsp&nbsp&nbsp&nbsp START</div></p2>
+								<div id="ovalstartshadow"></div>
+							<a href="../landingpage.html"><div id="ovalmenu">
+								<p2>&nbsp&nbsp&nbsp&nbsp MENU</p2></div></a>
+								<div id="ovalmenushadow"></div>
+							<div id="ovalvent1"></div>
+							<div id="ovalvent2"></div>
+							<div id="ovalvent3"></div>
+	
+
+		</body>
+
+	</html>
